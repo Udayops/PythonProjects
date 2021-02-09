@@ -6,7 +6,7 @@ class ClientFactory:
         self._client = boto3.client(client, region_name="eu-west-3")
 
     def get_client(self):
-        return self._client
+        return self._client 
 
 
 class RDSClient(ClientFactory):
